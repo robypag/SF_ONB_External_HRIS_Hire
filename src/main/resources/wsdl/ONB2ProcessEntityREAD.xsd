@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ONB2Process">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" name="ONB2Process">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element nillable="false" maxOccurs="1" name="processId">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="createdBy">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="createdDateTime" xmlns=""/>
+                            <xs:element type="xs:long" nillable="true" minOccurs="0" maxOccurs="1" name="employeePersonId" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="manager">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:long" nillable="true" minOccurs="0" maxOccurs="1" name="managerPersonId" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="onboardingHireStatus">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="onboardingHiredDate" xmlns=""/>
+                            <xs:element type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1" name="onboardingInternalHire" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="processStatus">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="processTrigger">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="false" maxOccurs="1" name="processType">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="stableId">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="startDate" xmlns=""/>
+                            <xs:element type="xs:dateTime" nillable="false" maxOccurs="1" name="targetDate" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="targetSystem">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="user">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
