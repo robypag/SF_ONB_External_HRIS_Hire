@@ -1,5 +1,0 @@
-#Store metainfo properties
-#Sun Dec 08 01:27:14 UTC 2024
-description=Onboarding 2.0 Interface from EmployeeCentral to SAP Business Integration Builder
-source=SAPSuccessFactorsEmployeeCentral
-target=SAPHCM
